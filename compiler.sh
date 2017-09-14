@@ -15,4 +15,4 @@ as -o $fileName.o $fileName.s
 gcc -o $fileName $fileName.o
 
 #Inform user that the file has been assembled correctly
-echo "File compiled successfully"
+echo "File $fileName.o compiled successfully"
