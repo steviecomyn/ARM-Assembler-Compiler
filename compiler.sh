@@ -7,6 +7,9 @@
 read -p "Please enter the name of the file (without .s): " fileName
 echo "File name is $fileName "
 
+[ -f $fileName.s ] && echo "File $fileName.s exists! Good!" || echo "File $fileName.s does NOT exist! That's bad!"
+[ -f $fileName.o ] && echo "The file $fileName.o already exists! This could cause issues!" || echo "Begining compiler..."
+
 #Create/Compile ARM Assembler object
 as -o $fileName.o $fileName.s
 gcc -o $fileName $fileName.o
