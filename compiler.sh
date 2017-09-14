@@ -1,7 +1,6 @@
 #Assembler Auto Comiler
-#Written by Scott
-#Written 14-09-2017
-#Last Updated 14-09-2017
+#Written by Scott L. Robertson - 14-09-2017
+#Last Updated: 14-09-2017 - 14:33
 
 #Prompt user to input file name
 read -p "Please enter the name of the file (without .s): " fileName
